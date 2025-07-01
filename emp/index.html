@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Management Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Management Dashboard</h1>
+
+    <form id="employee-form">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="position" placeholder="Position" required /><br>
+      <input type="email" id="email" placeholder="Email" required /><br>
+      <button type="submit">Add Employee</button>
+    </form>
+
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employee-table-body">
+        <!-- Dynamic rows go here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
